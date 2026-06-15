@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Arrow = () => (
-  <svg 
-    width="36" 
-    height="36" 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="1.2" 
-    strokeLinecap="square" 
+  <svg
+    width="36"
+    height="36"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.2"
+    strokeLinecap="square"
     className="transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-2 text-white/80"
   >
     <path d="M7 17L17 7M17 7H7M17 7V17" />
@@ -23,17 +23,17 @@ export default function OurServices() {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
   };
-  
+
   const item = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } }
   };
 
   return (
     <section className="w-full bg-black text-white py-24 font-sans border-t border-white/10">
       <div className="max-w-[1500px] mx-auto px-6 md:px-12">
         {/* Header Section */}
-        <motion.div 
+        <motion.div
           variants={container}
           initial="hidden"
           whileInView="visible"
@@ -49,7 +49,7 @@ export default function OurServices() {
               <span className="font-bold">SERVICES</span>
             </motion.h2>
           </div>
-          
+
           <div className="flex-1 flex flex-col md:flex-row gap-8 md:gap-16 text-xs md:text-sm text-white/70 tracking-wider leading-relaxed uppercase pb-2">
             <motion.p variants={item} className="flex-1">
               FLAG EMBASSY IS A SPIRIT-FILLED CHURCH,<br className="hidden md:block" />
@@ -69,12 +69,12 @@ export default function OurServices() {
 
         {/* Bento Grid Layout */}
         <div className="w-full grid grid-cols-1 lg:grid-cols-12 border-t border-b border-white/20">
-          
+
           {/* Left Column (Span 7) */}
           <div className="lg:col-span-7 flex flex-col border-b lg:border-b-0 lg:border-r border-white/20">
-            
+
             {/* Left Top Block */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
               className="p-6 md:p-10 lg:p-12 border-b border-white/20 flex flex-col justify-between group min-h-[500px]"
             >
@@ -82,7 +82,7 @@ export default function OurServices() {
                 <h3 className="text-sm tracking-[0.15em] text-white/50 uppercase font-medium">SUNDAY SERVICE</h3>
                 <Arrow />
               </div>
-              
+
               <div className="w-full max-w-sm mb-12">
                 <p className="text-xs text-white/70 leading-[1.8] tracking-widest uppercase">
                   ALL OUR GATHERINGS ARE THE<br />
@@ -100,13 +100,13 @@ export default function OurServices() {
             </motion.div>
 
             {/* Left Bottom Block */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.2 }}
               className="flex-1 p-6 md:p-10 lg:p-12 flex flex-col md:flex-row gap-8 lg:gap-12 justify-between group"
             >
               <div className="flex-1 flex flex-col justify-between">
                 <h3 className="text-sm tracking-[0.15em] text-white/50 uppercase mb-16 md:mb-32 font-medium">YOUTH / WORSHIP<br />/ MINISTRY</h3>
-                
+
                 <div>
                   <p className="text-xs text-white/70 leading-[1.8] tracking-widest uppercase mb-6 max-w-[250px]">
                     A SORT OF SPIRITUAL AWAKENING THAT<br />
@@ -127,15 +127,15 @@ export default function OurServices() {
 
           {/* Right Column (Span 5) */}
           <div className="lg:col-span-5 flex flex-col">
-            
+
             {/* Right Top Block */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }}
               className="p-6 md:p-10 lg:p-12 border-b border-white/20 flex justify-between items-start group relative min-h-[380px]"
             >
               <div className="flex flex-col h-full justify-between z-10 w-full">
                 <h3 className="text-sm tracking-[0.15em] text-white/50 uppercase mb-24 font-medium">LEAD PASTOR / VISIONARY</h3>
-                
+
                 <div className="flex justify-between items-end w-full">
                   <p className="text-sm uppercase tracking-widest font-semibold">FIRSTNAME PALMIERI</p>
                   <Arrow />
@@ -149,7 +149,7 @@ export default function OurServices() {
             </motion.div>
 
             {/* Right Middle Block */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.2 }}
               className="p-6 md:p-10 lg:p-12 border-b border-white/20 flex flex-col justify-between group min-h-[280px]"
             >
@@ -157,7 +157,7 @@ export default function OurServices() {
                 <h3 className="text-sm tracking-[0.15em] text-white/50 uppercase font-medium">COMMUNITY</h3>
                 <Arrow />
               </div>
-              
+
               <div className="w-full max-w-sm ml-auto">
                 <p className="text-xs text-white/70 leading-[1.8] tracking-widest uppercase">
                   THE CHURCH SUBJECTS ITS MINISTRIES<br />
@@ -171,9 +171,9 @@ export default function OurServices() {
 
             {/* Right Bottom Blocks (Split) */}
             <div className="grid grid-cols-1 sm:grid-cols-2 flex-1">
-              
+
               {/* Bottom Left Small Block */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.3 }}
                 className="p-6 md:p-10 border-b sm:border-b-0 border-r-0 sm:border-r border-white/20 flex flex-col group min-h-[280px]"
               >
@@ -187,7 +187,7 @@ export default function OurServices() {
               </motion.div>
 
               {/* Bottom Right Small Block */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.4 }}
                 className="p-6 md:p-10 flex flex-col group min-h-[280px]"
               >
