@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
-  --accent: #A5B4FC; /* A nice muted blue/lavender accent */
+  --background: #FCF6F5;
+  --foreground: #990011;
+  --accent: #990011; /* A nice muted blue/lavender accent */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
+  --color-black: #FCF6F5;
+  --color-white: #990011;
   --font-oswald: var(--font-oswald), sans-serif;
   --font-petit: var(--font-petit-formal-script), cursive;
   --font-season-mix: var(--font-season-mix), sans-serif;
@@ -19,9 +21,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --foreground: #ffffff;
-    --accent: #A5B4FC;
+    --background: #990011;
+    --foreground: #FCF6F5;
+    --accent: #FCF6F5;
   }
 }
 
