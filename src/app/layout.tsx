@@ -59,7 +59,20 @@ function Navbar() {
           <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
           <Link href="/about" className="hover:text-foreground transition-colors">About</Link>
           <Link href="/vision" className="hover:text-foreground transition-colors">Vision</Link>
-          <Link href="/ministries" className="hover:text-foreground transition-colors">Ministries</Link>
+          
+          <div className="relative group py-2">
+            <Link href="/ministries" className="hover:text-foreground transition-colors flex items-center gap-1">
+              Ministries
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+            </Link>
+            <div className="absolute top-[100%] left-0 hidden group-hover:flex flex-col bg-background/95 backdrop-blur-md border border-foreground/10 py-2 min-w-[200px] z-50 rounded-sm shadow-xl">
+              <Link href="/ministries" className="px-4 py-2 text-xs tracking-widest uppercase text-foreground/70 hover:bg-foreground/5 hover:text-foreground transition-colors">All Ministries</Link>
+              <Link href="/ministries/flag-kids" className="px-4 py-2 text-xs tracking-widest uppercase text-foreground/70 hover:bg-foreground/5 hover:text-foreground transition-colors">Flag Kids</Link>
+              <Link href="/ministries/flag-youth" className="px-4 py-2 text-xs tracking-widest uppercase text-foreground/70 hover:bg-foreground/5 hover:text-foreground transition-colors">Flag Youth</Link>
+              <Link href="/ministries/flag-women" className="px-4 py-2 text-xs tracking-widest uppercase text-foreground/70 hover:bg-foreground/5 hover:text-foreground transition-colors">Flag Women</Link>
+            </div>
+          </div>
+
           <Link href="/media" className="hover:text-foreground transition-colors">Media</Link>
           <Link href="/connect" className="hover:text-foreground transition-colors">Connect</Link>
           <Link href="/give" className="hover:text-foreground transition-colors">Give</Link>

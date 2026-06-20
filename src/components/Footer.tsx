@@ -40,18 +40,18 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-12 md:gap-24">
             <div className="flex flex-col gap-4">
               <span className="text-[10px] tracking-[0.2em] text-white/40 uppercase mb-2">EXPLORE</span>
-              <Link href="#" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">HOME</Link>
-              <Link href="#" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">ABOUT US</Link>
-              <Link href="#" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">MINISTRIES</Link>
-              <Link href="#" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">GIVING</Link>
+              <Link href="/" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">HOME</Link>
+              <Link href="/about" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">ABOUT US</Link>
+              <Link href="/ministries" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">MINISTRIES</Link>
+              <Link href="/give" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">GIVING</Link>
             </div>
 
             <div className="flex flex-col gap-4">
               <span className="text-[10px] tracking-[0.2em] text-white/40 uppercase mb-2">MEDIA</span>
-              <Link href="#" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">SERMONS</Link>
-              <Link href="#" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">PODCAST</Link>
-              <Link href="#" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">WORSHIP</Link>
-              <Link href="#" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">EVENTS</Link>
+              <Link href="/media" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">SERMONS</Link>
+              <Link href="/media" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">PODCAST</Link>
+              <Link href="/ministries" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">WORSHIP</Link>
+              <Link href="/connect" className="text-xs tracking-widest uppercase hover:text-[#f0c265] transition-colors">EVENTS</Link>
             </div>
 
             <div className="flex flex-col gap-4 col-span-2 md:col-span-1">

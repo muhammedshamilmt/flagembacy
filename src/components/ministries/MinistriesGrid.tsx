@@ -8,21 +8,21 @@ const ministries = [
     title: "Flag Kids",
     desc: "Ages 0–12. A safe, creative, and Spirit-filled environment where children discover God's love and build lifelong faith.",
     linkText: "Learn More",
-    href: "#",
+    href: "/ministries/flag-kids",
     emoji: "🧒"
   },
   {
     title: "Flag Youth",
     desc: "Ages 13–19. A movement for the next generation — bold in faith, relevant in culture, and rooted in purpose.",
     linkText: "Learn More",
-    href: "#",
+    href: "/ministries/flag-youth",
     emoji: "🔥"
   },
   {
     title: "Flag Women",
     desc: "Empowering women to walk in identity, calling, and sisterhood through community, teaching, and encounter.",
     linkText: "Learn More",
-    href: "#",
+    href: "/ministries/flag-women",
     emoji: "👑"
   },
   {
@@ -64,7 +64,7 @@ const ministries = [
     title: "Connect Groups",
     desc: "Small groups meeting weekly across the city for fellowship, study, and prayer.",
     linkText: "Find a Group",
-    href: "#",
+    href: "/connect",
     emoji: "🏘️"
   }
 ];
