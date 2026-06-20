@@ -8,6 +8,7 @@ import Testimonials from "@/components/Testimonials";
 import UpcomingEvents from "@/components/UpcomingEvents";
 import GiveBanner from "@/components/GiveBanner";
 import Footer from "@/components/Footer";
+import VisionStatement from "@/components/VisionStatement";
 
 // Note: AlbumBanner and VisionStatement are preserved in the components folder but removed from the main flow to match the exact blueprint.
 // import AlbumBanner from "@/components/AlbumBanner";
@@ -18,6 +19,7 @@ export default function Home() {
     <main className="flex w-full flex-col items-center overflow-clip bg-black">
       <HeroSection />
       <WelcomeSection />
+      <VisionStatement />
       <UpcomingEvents />
       <QuickPillars />
       <ServiceTimes />
